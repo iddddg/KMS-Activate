@@ -4,4 +4,4 @@
 
 此脚本仅供测试，请购买正版Windows。Windows版权归属于微软，无意冒犯2333。。。
 
-想了解更多，欢迎访问<a href="http://kms.ddddg.cn">https://www.ddddg.cn</a>
+想了解更多，欢迎访问<a href="http://kms.ddddg.cn" target="_blank">https://www.ddddg.cn</a>
