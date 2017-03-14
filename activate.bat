@@ -8,7 +8,7 @@ rem  --> Check for permissions
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 rem --> If error flag set, we do not have admin.  
 if '%errorlevel%' NEQ '0' (  
-    echo Requesting administrative privileges...  
+    echo 获取管理员权限中,如果UAC弹窗,请选择允许...
     goto UACPrompt  
 ) else ( goto gotAdmin )   
 :UACPrompt  
