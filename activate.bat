@@ -1,6 +1,5 @@
 @echo off
 mode con cols=100 lines=30 & color fc
-
 rem 获取管理员权限
 :: BatchGotAdmin  
 :-------------------------------------  
