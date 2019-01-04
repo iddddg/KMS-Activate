@@ -1,9 +1,21 @@
-# KMS-Windows
-一键激活Windows的KMS bat激活脚本
-~~需要右键以管理员模式打开~~   **_脚本已经更新,直接正常打开即可_** ,自动判断是否获取了管理员权限,没有则获取,如果UAC弹窗,请选择允许
+# KMS-Activate
+#### Windows/Office通用激活工具
 
-目前仅支持Windows7 —— 10专业版批量版激活。
+### 支持产品
+1. 支持Windows Vista/7的大批量授权版本的激活
+2. 支持Windows 8/8.1/10的全套产品的激活
+3. 支持Windows Server 2008/2008 R2/2012/2012 R2/2016的全套产品的激活
+4. 支持Office 2010/2013/2016的全套产品的激活。
 
-此脚本仅供测试，请购买正版Windows。Windows版权归属于微软，无意冒犯2333。。。
+### 使用方式
+全新升级，双击activate.bat 执行，自动判断Windows/Office版本，进行激活
+如有管理员权限弹窗，请选择同意
+~~old_windows_activate.bat~~ 已废弃
 
-想了解更多，欢迎访问<a href="http://kms.ddddg.cn" target="_blank">https://www.ddddg.cn</a>
+### 温馨提示
+此脚本仅供测试，请购买正版Windows/Office。
+Windows/Office版权归属于微软，无意冒犯2333。。。
+
+### 关于
+[淡定定定哥](https://www.ddddg.cn/ "淡定定定哥")
+更多请访问[KMS服务](https://kms.ddddg.cn/ "KMS服务")
