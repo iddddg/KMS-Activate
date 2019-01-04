@@ -9,7 +9,9 @@
 
 ### 使用方式
 全新升级，双击activate.bat 执行，自动判断Windows/Office版本，进行激活
+
 如有管理员权限弹窗，请选择同意
+
 ~~old_windows_activate.bat~~ 已废弃
 
 ### 温馨提示
