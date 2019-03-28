@@ -1,24 +1,24 @@
 @echo off
 setlocal EnableDelayedExpansion&color 02 & cd /d "%~dp0"
-title Windows/OfficeÍ¨ÓÃ¼¤»î¹¤¾ß By:µ­¶¨¶¨¶¨¸ç
+title Windows/Officeé€šç”¨æ¿€æ´»å·¥å…· By:æ·¡å®šå®šå®šå“¥
 %1 %2
 ver|find "5.">nul&&goto :start
 mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :start","","runas",1)(window.close)&goto :eof
 
 :start
 cls
-echo Windows/OfficeÍ¨ÓÃ¼¤»î¹¤¾ß
-echo.&echo µ­¶¨¶¨¶¨¸ç https://kms.ddddg.cn/
-echo.&echo ÕýÔÚ¼ì²éÓë¼¤»î·þÎñÆ÷µÄÁ¬½ÓÇé¿ö. . .
+echo Windows/Officeé€šç”¨æ¿€æ´»å·¥å…·
+echo.&echo æ·¡å®šå®šå®šå“¥ https://www.ddddg.cn/
+echo.&echo æ­£åœ¨æ£€æŸ¥ä¸Žæ¿€æ´»æœåŠ¡å™¨çš„è¿žæŽ¥æƒ…å†µ. . .
 set KMSSER=kms.ddddg.cn
 echo.
-ping -n 1 %KMSSER% | find "³¬Ê±" >nul && goto fail
-ping -n 1 %KMSSER% | find "Ä¿±êÖ÷»ú" >nul && goto fail
-ping -n 1 %KMSSER% | find "ÎÞ·¨·ÃÎÊ" >nul && goto fail
-ping -n 1 %KMSSER% | find "¹ÊÕÏ" >nul && goto fail
-ping -n 1 %KMSSER% | find "ÕÒ²»µ½" >nul && goto fail
-echo ³É¹¦Á¬½ÓÉÏ·þÎñÆ÷£¬¼ì²éÏµÍ³µÄ¼¤»îÇé¿ö(½«×Ô¶¯Ìø¹ýÒÑÓÀ¾Ã¼¤»îµÄÏµÍ³) & echo.
-cscript //Nologo %windir%\system32\slmgr.vbs /xpr | find "ÒÑÓÀ¾Ã¼¤»î" >nul && goto wintooff
+ping -n 1 %KMSSER% | find "è¶…æ—¶" >nul && goto fail
+ping -n 1 %KMSSER% | find "ç›®æ ‡ä¸»æœº" >nul && goto fail
+ping -n 1 %KMSSER% | find "æ— æ³•è®¿é—®" >nul && goto fail
+ping -n 1 %KMSSER% | find "æ•…éšœ" >nul && goto fail
+ping -n 1 %KMSSER% | find "æ‰¾ä¸åˆ°" >nul && goto fail
+echo æˆåŠŸè¿žæŽ¥ä¸ŠæœåŠ¡å™¨ï¼Œæ£€æŸ¥ç³»ç»Ÿçš„æ¿€æ´»æƒ…å†µ(å°†è‡ªåŠ¨è·³è¿‡å·²æ°¸ä¹…æ¿€æ´»çš„ç³»ç»Ÿ) & echo.
+cscript //Nologo %windir%\system32\slmgr.vbs /xpr | find "å·²æ°¸ä¹…æ¿€æ´»" >nul && goto wintooff
 
 :starta
 ver | find "6.0." > nul && goto winvista
@@ -27,11 +27,11 @@ ver | find "6.2." > nul && goto win8
 ver | find "6.3." > nul && goto win81
 ver | find "10.0." > nul && goto win10
 ver|find "5.">nul&&goto :xptooff
-echo Î´ÕÒµ½ºÏÊÊµÄÏµÍ³£¬°´ÈÎÒâ¼üÍË³ö. . . & pause>nul
+echo æœªæ‰¾åˆ°åˆé€‚çš„ç³»ç»Ÿï¼ŒæŒ‰ä»»æ„é”®é€€å‡º. . . & pause>nul
 start https://www.ddddg.cn/ & exit
 
 :winvista
-echo µ±Ç°ÏµÍ³ÎªWindows Vista/Windows Server 2008
+echo å½“å‰ç³»ç»Ÿä¸ºWindows Vista/Windows Server 2008
 set Business=YFKBB-PQJJV-G996G-VWGXY-2V3X8
 set BusinessN=HMBQG-8H2RH-C77VX-27R82-VMQBT
 set Enterprise=VKK3X-68KWM-X2YGT-QR4M6-4BWMV
@@ -48,7 +48,7 @@ set ServerEnterpriseIA64=4DWFP-JF3DJ-B7DTH-78FJB-PDRHK
 goto windowsstart
 
 :win7
-echo µ±Ç°ÏµÍ³ÎªWindows 7/Windows Server 2008 R2
+echo å½“å‰ç³»ç»Ÿä¸ºWindows 7/Windows Server 2008 R2
 set Professional=FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
 set ProfessionalN=MRPKT-YTG23-K7D7T-X2JMM-QY7MG
 set ProfessionalE=W82YF-2Q76Y-63HXB-FGJG9-GF7QX
@@ -64,7 +64,7 @@ set ServerEnterpriseIA64=GT63C-RJFQ3-4GMB6-BRFB9-CB83V
 goto windowsstart
 
 :win8
-echo µ±Ç°ÏµÍ³ÎªWindows 8/Windows Server 2012
+echo å½“å‰ç³»ç»Ÿä¸ºWindows 8/Windows Server 2012
 set Professional=NG4HW-VH26C-733KW-K6F98-J8CK4
 set ProfessionalN=XCVCF-2NXM9-723PB-MHCB7-2RYQQ
 set Core=BN3D2-R7TKB-3YPBD-8DRP2-27GG4
@@ -82,7 +82,7 @@ set CoreARM=DXHJF-N9KQX-MFPVR-GHGQK-Y7RKV
 goto windowsstart
 
 :win81
-echo µ±Ç°ÏµÍ³ÎªWindows 8.1/Windows Server 2012 R2
+echo å½“å‰ç³»ç»Ÿä¸ºWindows 8.1/Windows Server 2012 R2
 set Core=M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK
 set CoreARM=XYTND-K6QKT-K2MRH-66RTM-43JKP
 set CoreCountrySpecific=NCTT7-2RGK8-WMHRF-RY7YQ-JTXG3
@@ -107,13 +107,13 @@ set ServerSolutionCore=KNC87-3J2TX-XB4WP-VCPJV-M4FWM
 goto windowsstart
 
 :win10
-echo µ±Ç°ÏµÍ³ÎªWindows 10/Windows Server 2016
-echo.&echo ³¢ÊÔ½øÐÐÓÀ¾Ã¼¤»î
+echo å½“å‰ç³»ç»Ÿä¸ºWindows 10/Windows Server 2016
+echo.&echo å°è¯•è¿›è¡Œæ°¸ä¹…æ¿€æ´»
 cscript //Nologo %windir%\system32\slmgr.vbs /ipk VK7JG-NPHTM-C97JM-9MPGT-3V66T >nul
-cscript //Nologo %windir%\system32\slmgr.vbs /ato | find "³É¹¦" >nul && goto win10tooff
+cscript //Nologo %windir%\system32\slmgr.vbs /ato | find "æˆåŠŸ" >nul && goto win10tooff
 cscript //Nologo %windir%\system32\slmgr.vbs /ipk QJNXR-YD97Q-K7WH4-RYWQ8-6MT6Y >nul
-cscript //Nologo %windir%\system32\slmgr.vbs /ato | find "³É¹¦" >nul && goto win10tooff
-echo ÓÀ¾Ã¼¤»îÊ§°Ü£¬½øÐÐKMS¼¤»î
+cscript //Nologo %windir%\system32\slmgr.vbs /ato | find "æˆåŠŸ" >nul && goto win10tooff
+echo æ°¸ä¹…æ¿€æ´»å¤±è´¥ï¼Œè¿›è¡ŒKMSæ¿€æ´»
 echo.
 set Core=TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
 set CoreCountrySpecific=PVMJN-6DFY6-9CCP6-7BKTT-D3WVR
@@ -142,54 +142,54 @@ if defined %EditionID% (
 	cscript //Nologo %windir%\system32\slmgr.vbs /skms %KMSSER% >nul
 	cscript //Nologo %windir%\system32\slmgr.vbs /ato
 ) else (
-	echo ÕÒ²»µ½ÏµÁÐºÅ£¬¿ÉÄÜÊÇÆì½¢°æÖ®ÀàµÄÏµÍ³
+	echo æ‰¾ä¸åˆ°ç³»åˆ—å·ï¼Œå¯èƒ½æ˜¯æ——èˆ°ç‰ˆä¹‹ç±»çš„ç³»ç»Ÿ
 	ver | find "6.1." > nul && goto oem7
 	ver | find "6.0." > nul && goto oem7
 )
 goto office
 
 :wintooff
-echo ÏµÍ³ÒÑ¾­ÓÀ¾Ã¼¤»î£¡×ªÈëoffice¼¤»î
+echo ç³»ç»Ÿå·²ç»æ°¸ä¹…æ¿€æ´»ï¼è½¬å…¥officeæ¿€æ´»
 goto office
 
 :win10tooff
-echo.&echo ÏµÍ³ÒÑ¾­ÓÀ¾Ã¼¤»î£¡×ªÈëoffice¼¤»î
+echo.&echo ç³»ç»Ÿå·²ç»æ°¸ä¹…æ¿€æ´»ï¼è½¬å…¥officeæ¿€æ´»
 
 :office
-echo ¿ªÊ¼¼ì²âOffice°²×°¼¤»î×´Ì¬
+echo å¼€å§‹æ£€æµ‹Officeå®‰è£…æ¿€æ´»çŠ¶æ€
 call :GetOfficePath 14 Office2010
 call :ActOffice 14 Office2010
 call :GetOfficePath 15 Office2013
 call :ActOffice 15 Office2013
 call :GetOfficePath 16 Office2016
 call :ActOffice 16 Office2016
-echo.&echo ¼ì²éÊÇ·ñ´æÔÚoffice 2016ÁãÊÛ°æ£¬½«Ö´ÐÐretail×ªvol
+echo.&echo æ£€æŸ¥æ˜¯å¦å­˜åœ¨office 2016é›¶å”®ç‰ˆï¼Œå°†æ‰§è¡Œretailè½¬vol
 if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" set _Office16Path=%ProgramFiles%\Microsoft Office\Office16
 if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" set _Office16Path=%ProgramFiles(x86)%\Microsoft Office\Office16
-if DEFINED _Office16Path (echo ÒÑ·¢ÏÖ Office2016 ÁãÊÛ°æ
+if DEFINED _Office16Path (echo å·²å‘çŽ° Office2016 é›¶å”®ç‰ˆ
     call :ActOffice 16 Office2016
-  ) else (echo Î´·¢ÏÖ Office2016ÁãÊÛ°æ)
-echo ²Ù×÷Íê³É£¬°´ÈÎÒâ¼üÍË³ö. . . & pause>nul
+  ) else (echo æœªå‘çŽ° Office2016é›¶å”®ç‰ˆ)
+echo æ“ä½œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º. . . & pause>nul
 start https://www.ddddg.cn/ & exit
 
 :ActOffice
 if DEFINED _Office%1Path (
     cd /d "!_Office%1Path!"
-	echo.&echo ¼ì²é %2 µÄ¼¤»î×´Ì¬¡£
+	echo.&echo æ£€æŸ¥ %2 çš„æ¿€æ´»çŠ¶æ€ã€‚
 	cscript //nologo ospp.vbs /act | find /i "successful" > nul && (
-        echo %2 ÒÑ¾­¼¤»î£¬×Ô¶¯Ìø¹ý & echo.) || (
-		echo %2 Î´¼¤»î£¬Õý³¢ÊÔ½øÐÐ¼¤»î¡£
+        echo %2 å·²ç»æ¿€æ´»ï¼Œè‡ªåŠ¨è·³è¿‡ & echo.) || (
+		echo %2 æœªæ¿€æ´»ï¼Œæ­£å°è¯•è¿›è¡Œæ¿€æ´»ã€‚
 		if %1 EQU 16 call :Licens16
 		cscript //nologo ospp.vbs /sethst:%KMSSER% >nul
 		cscript //nologo ospp.vbs /act | find /i "successful" && (
-        echo.&echo ***** %2 ¼¤»î³É¹¦ ***** & echo.) || (echo.&echo ***** %2 ¼¤»îÊ§°Ü ***** & echo.)
+        echo.&echo ***** %2 æ¿€æ´»æˆåŠŸ ***** & echo.) || (echo.&echo ***** %2 æ¿€æ´»å¤±è´¥ ***** & echo.)
 		)
 )    
 cd /d "%~dp0"
 goto :EOF
 
 :GetOfficePath
-echo.&echo ÕýÔÚ¼ì²â %2 ²úÆ·µÄ°²×°Â·¾¶. . .
+echo.&echo æ­£åœ¨æ£€æµ‹ %2 äº§å“çš„å®‰è£…è·¯å¾„. . .
 set _Office%1Path=
 set _Reg32=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\%1.0\Common\InstallRoot
 set _Reg64=HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\%1.0\Common\InstallRoot
@@ -199,7 +199,7 @@ if DEFINED _OfficePath1 (if exist "%_OfficePath1%ospp.vbs" set _Office%1Path=!_O
 if DEFINED _OfficePath2 (if exist "%_OfficePath2%ospp.vbs" set _Office%1Path=!_OfficePath2!)
 set _OfficePath1=
 set _OfficePath2=
-if DEFINED _Office%1Path (echo ÒÑ·¢ÏÖ %2) else (echo Î´·¢ÏÖ %2)
+if DEFINED _Office%1Path (echo å·²å‘çŽ° %2) else (echo æœªå‘çŽ° %2)
 goto :EOF
 
 :Licens16
@@ -222,20 +222,20 @@ exit
 
 :xptooff
 cls
-echo µ±Ç°ÎªWinXP»òWin2003¡£
+echo å½“å‰ä¸ºWinXPæˆ–Win2003ã€‚
 call :GetOfficePath 14 Office2010
 call :ActOffice 14 Office2010
 exit
 
 :fail
-echo        ÎÞ·¨Á¬½Óµ½·þÎñÆ÷£¬ÇëÑ¡ÔñÏëÖ´ÐÐµÄ²Ù×÷¡£
+echo        æ— æ³•è¿žæŽ¥åˆ°æœåŠ¡å™¨ï¼Œè¯·é€‰æ‹©æƒ³æ‰§è¡Œçš„æ“ä½œã€‚
 echo ---------------------------------------------------
-echo  ¡¾1¡¿³¢ÊÔÖØÐÂÁ¬½Ó·þÎñÆ÷
-echo  ¡¾2¡¿Ô¤ÅäÖÃÄ£Ê½£¨²»Ö§³Öwin7 x64ÏÂ¼¤»î32Î»office£©
-echo  ¡¾3¡¿Ê¹ÓÃÆäËû¼¤»î·þÎñÆ÷£¨²»¼ì²éÓÐÐ§ÐÔ£©
-echo  ¡¾4¡¿ÍË³ö
+echo  ã€1ã€‘å°è¯•é‡æ–°è¿žæŽ¥æœåŠ¡å™¨
+echo  ã€2ã€‘é¢„é…ç½®æ¨¡å¼ï¼ˆä¸æ”¯æŒwin7 x64ä¸‹æ¿€æ´»32ä½officeï¼‰
+echo  ã€3ã€‘ä½¿ç”¨å…¶ä»–æ¿€æ´»æœåŠ¡å™¨ï¼ˆä¸æ£€æŸ¥æœ‰æ•ˆæ€§ï¼‰
+echo  ã€4ã€‘é€€å‡º
 echo ---------------------------------------------------
-choice /c 1234 /n /m "ÇëÊäÈëÑ¡ÏîÇ°µÄÐòºÅ: "
+choice /c 1234 /n /m "è¯·è¾“å…¥é€‰é¡¹å‰çš„åºå·: "
 SET ERRORTEMP=%ERRORLEVEL%
 IF %ERRORTEMP%==1 goto start
 IF %ERRORTEMP%==2 goto starta
@@ -244,7 +244,7 @@ IF %ERRORTEMP%==4 goto exit
 
 :selfkms
 echo ---------------------------------------------------
-echo ³£ÓÃµÄKMS·þÎñÆ÷ÓÐ£º
+echo å¸¸ç”¨çš„KMSæœåŠ¡å™¨æœ‰ï¼š
 echo kms.miaomiao.zyns.com
 echo kms.lotro.cc
 echo 54.223.212.31
@@ -253,21 +253,21 @@ echo xykz.f3322.org
 echo kms.xspace.in
 echo zh.us.to
 echo ---------------------------------------------------
-echo ÇëÊäÈëKMS¼¤»î·þÎñÆ÷µØÖ·(»Ø³µÄ¬ÈÏ54.223.212.31)£º
-echo Äã¿ÉÒÔÊ¹ÓÃÆäËû¼¤»î·þÎñÆ÷£¬µ«²»¼ì²éÆäÓÐÐ§ÐÔ
+echo è¯·è¾“å…¥KMSæ¿€æ´»æœåŠ¡å™¨åœ°å€(å›žè½¦é»˜è®¤54.223.212.31)ï¼š
+echo ä½ å¯ä»¥ä½¿ç”¨å…¶ä»–æ¿€æ´»æœåŠ¡å™¨ï¼Œä½†ä¸æ£€æŸ¥å…¶æœ‰æ•ˆæ€§
 set KMSSER=54.223.212.31
 set /p KMSSER=
 goto starta
 exit
 
 :oem7
-echo ²Ù×÷Íê³É£¬°´ÈÎÒâ¼üÍË³ö. . . & pause>nul
+echo æ“ä½œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º. . . & pause>nul
 start https://www.ddddg.cn/ & exit
 
 :exit
-echo ²Ù×÷Íê³É£¬°´ÈÎÒâ¼üÍË³ö. . . & pause>nul
+echo æ“ä½œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º. . . & pause>nul
 start https://www.ddddg.cn/ & exit
 
 :localkms
-echo ²Ù×÷Íê³É£¬°´ÈÎÒâ¼üÍË³ö. . . & pause>nul
+echo æ“ä½œå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º. . . & pause>nul
 start https://www.ddddg.cn/ & exit
